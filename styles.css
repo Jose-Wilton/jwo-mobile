@@ -12,9 +12,15 @@ body {
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
   background: #787879;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
+
+@media (min-width: 768px) {
+  body {
+    align-items: center;
+  }
+}
+
 
 .page {
   width: 100%;
@@ -80,7 +86,7 @@ body {
 
 .card p {
   font-size: 1rem;
-  line-height: 1.7;
+  line-height: 1.8;
   margin: 0 0 1.2rem;
 }
 
@@ -125,13 +131,28 @@ body {
     padding: 1.25rem;
   }
 
-  .card {
-    padding: 2rem 1.5rem;
+  .logo {
+    width: 120px;
+    height: 120px;
   }
 
-  .logo {
-    width: 150px;
-    height: 150px;
+  .brand-title {
+    font-size: 1.8rem;
+  }
+
+  .brand-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .card {
+    padding: 1.8rem 1.4rem;
+  }
+
+  .contact-button-light {
+    width: 100%;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 1.05rem;
   }
 }
 
