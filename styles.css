@@ -2,11 +2,6 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  height: 100%;
-}
-
 body {
   margin: 0;
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
@@ -21,7 +16,6 @@ body {
   }
 }
 
-
 .page {
   width: 100%;
   max-width: 900px;
@@ -29,8 +23,10 @@ body {
   text-align: center;
 }
 
+/* HEADER */
 .brand {
-  margin: 0 auto 1.5rem;
+  position: relative;
+  margin-bottom: 1.5rem;
 }
 
 .brand-title {
@@ -38,34 +34,35 @@ body {
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 800;
   letter-spacing: -0.02em;
-  color: #000000;
+  color: #000;
   font-family: 'Montserrat', sans-serif;
 }
 
 .brand-subtitle {
   margin: 0 0 1.5rem;
   font-size: 1rem;
-  line-height: 1.5;
-  color: #ffffff;
+  color: #fff;
   opacity: 0.85;
 }
+
 .divider {
-    width: 200px;
-    height: 8px;
-    background-color: #ccd6f6;
-    margin: 20px auto;
-    border-radius: 2px;
+  width: 200px;
+  height: 8px;
+  background-color: #ccd6f6;
+  margin: 20px auto;
+  border-radius: 2px;
 }
 
+/* LOGO */
 .logo {
   width: 300px;
   height: 300px;
   margin: 0 auto;
   border-radius: 50%;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
 }
 
 .logo-img {
@@ -75,13 +72,12 @@ body {
   padding: 18px;
 }
 
+/* CARD */
 .card {
   background: #d9d9d9;
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
   border-radius: 20px;
   padding: 2.5rem 2rem;
-  color: #000000;
+  color: #000;
 }
 
 .card p {
@@ -90,29 +86,25 @@ body {
   margin: 0 0 1.2rem;
 }
 
-.card strong {
-  font-weight: 600;
-}
-
 .card footer {
   margin-top: 2rem;
   font-size: 0.9rem;
   opacity: 0.7;
 }
 
+/* BOTÃO CONTATO */
 .contact-button-light {
   display: inline-flex;
   align-items: center;
-  gap: 0.9rem;
+  justify-content: center;
   margin-top: 1.8rem;
   padding: 0.9rem 1.8rem;
   background-color: #d9d9d9;
-  color: #000000;
+  color: #000;
   border-radius: 16px;
   font-size: 1rem;
-  font-weight: 500;
   text-decoration: none;
-  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .contact-button-light:hover {
@@ -120,12 +112,29 @@ body {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
 }
 
-.email-icon-light {
-  width: 22px;
-  height: 22px;
-  color: #000000;
+/* BOTÃO APLICATIVOS – CANTO SUPERIOR DIREITO */
+.top-apps-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  padding: 0.6rem 1.2rem;
+  background: #d9d9d9;
+  color: #000;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: 500;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.top-apps-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* MOBILE */
 @media (max-width: 480px) {
   .page {
     padding: 1.25rem;
@@ -150,9 +159,12 @@ body {
 
   .contact-button-light {
     width: 100%;
-    justify-content: center;
-    padding: 1rem;
-    font-size: 1.05rem;
+  }
+
+  .top-apps-button {
+    top: 10px;
+    right: 10px;
+    font-size: 0.85rem;
+    padding: 0.55rem 1rem;
   }
 }
-
