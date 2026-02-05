@@ -1,0 +1,34 @@
+/* ===== RESET ===== */
+* {
+  box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+  background: #787879;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  body {
+    align-items: center;
+  }
+}
+
+/* ===== CONTAINER ===== */
+.page {
+  width: 100%;
+  max-width: 900px;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* ===== MOBILE GLOBAL ===== */
+@media (max-width: 480px) {
+  .page {
+    padding: 1.25rem;
+  }
+}

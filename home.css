@@ -1,31 +1,4 @@
-* {
-  box-sizing: border-box;
-}
-
-/* ===== BODY ===== */
-body {
-  margin: 0;
-  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-  background: #787879;
-  display: flex;
-  justify-content: center;
-}
-
-@media (min-width: 768px) {
-  body {
-    align-items: center;
-  }
-}
-
-/* ===== PAGE ===== */
-.page {
-  width: 100%;
-  max-width: 900px;
-  padding: 2rem;
-  text-align: center;
-}
-
-/* ===== HEADER ===== */
+/* ===== HEADER / MARCA ===== */
 .brand {
   position: relative;
   margin-bottom: 1.5rem;
@@ -74,7 +47,7 @@ body {
   padding: 18px;
 }
 
-/* ===== CARD ===== */
+/* ===== CARD HOME ===== */
 .card {
   background: #d9d9d9;
   border-radius: 20px;
@@ -115,7 +88,7 @@ body {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
 }
 
-/* ===== BOTÃO APLICATIVOS (ÍCONE EM CIMA / TEXTO EMBAIXO) ===== */
+/* ===== BOTÃO APLICATIVOS (CANTO SUPERIOR DIREITO) ===== */
 .top-apps-button {
   position: absolute;
   top: 0;
@@ -151,12 +124,8 @@ body {
   object-fit: contain;
 }
 
-/* ===== MOBILE ===== */
+/* ===== MOBILE (SOMENTE HOME) ===== */
 @media (max-width: 480px) {
-  .page {
-    padding: 1.25rem;
-  }
-
   .logo {
     width: 120px;
     height: 120px;
