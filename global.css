@@ -1,10 +1,49 @@
 /* ===== RESET GLOBAL ===== */
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
+/* ===== BODY GLOBAL ===== */
 body {
-  margin: 0;
-  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-  background: #787879;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  background-color: #787879;
+  color: #000000;
+  line-height: 1.6;
+}
+
+/* ===== LINKS ===== */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ===== IMAGENS ===== */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ===== BOTÕES (BASE) ===== */
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* ===== CONTAINER PADRÃO ===== */
+.page {
+  width: 100%;
+}
+
+/* ===== TEXTOS ===== */
+p {
+  font-size: 1rem;
+}
+
+/* ===== UTILITÁRIOS ===== */
+.hidden {
+  display: none;
 }
