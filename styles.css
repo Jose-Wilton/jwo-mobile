@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+  background: #787879;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  body {
+    align-items: center;
+  }
+}
+
+/* ===== PAGE ===== */
+.page {
+  width: 100%;
+  max-width: 900px;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* ===== HEADER ===== */
+.brand {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.brand-title {
+  margin: 0.75rem 0 0.25rem;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #000000;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.brand-subtitle {
+  margin: 0 0 1.5rem;
+  font-size: 1rem;
+  color: #ffffff;
+  opacity: 0.85;
+}
+
+.divider {
+  width: 200px;
+  height: 8px;
+  background-color: #ccd6f6;
+  margin: 20px auto;
+  border-radius: 2px;
+}
+
+/* ===== LOGO ===== */
+.logo {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 18px;
+}
+
+/* ===== CARD ===== */
+.card {
+  background: #d9d9d9;
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  color: #000000;
+}
+
+.card p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin: 0 0 1.2rem;
+}
+
+.card footer {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+/* ===== BOTÃO CONTATO ===== */
+.contact-button-light {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.8rem;
+  padding: 0.9rem 1.8rem;
+  background-color: #d9d9d9;
+  color: #000000;
+  border-radius: 16px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-button-light:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== BOTÃO APLICATIVOS (ÍCONE EM CIMA / TEXTO EMBAIXO) ===== */
+.top-apps-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+
+  padding: 0.6rem 0.8rem;
+  background: #d9d9d9;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 12px;
+
+  font-size: 0.75rem;
+  font-weight: 500;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.top-apps-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== ÍCONE DO BOTÃO ===== */
+.apps-icon-img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 480px) {
+  .page {
+    padding: 1.25rem;
+  }
+
+  .logo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .brand-title {
+    font-size: 1.8rem;
+  }
+
+  .brand-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .card {
+    padding: 1.8rem 1.4rem;
+  }
+
+  .contact-button-light {
+    width: 100%;
+  }
+
+  .top-apps-button {
+    top: 10px;
+    right: 10px;
+    padding: 0.55rem 0.7rem;
+    font-size: 0.7rem;
+  }
+
+  .apps-icon-img {
+    width: 16px;
+    height: 16px;
+  }
+}
