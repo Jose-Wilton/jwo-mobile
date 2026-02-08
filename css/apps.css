@@ -47,7 +47,7 @@
   width: 56px;
   height: 56px;
   border-radius: 12px;
-  background: #fff;
+  background: var(--bg-app);
 }
 
 .app-actions {
@@ -60,7 +60,7 @@
   flex: 1;
   padding: 0.6rem;
   text-align: center;
-  background: #fff;
+  background: var(--bg-app);
   border-radius: 10px;
   text-decoration: none;
   color: var(--text-dark);
