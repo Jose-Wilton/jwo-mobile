@@ -5,139 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Aplicativos | JWO Mobile</title>
 
-  <!-- Fontes -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet" />
 
-  <!-- Ícone -->
-  <link rel="icon" href="logo.png" />
-  <!-- CSS -->
-  <link rel="stylesheet" href="styles.css" />
-
-    <!-- Estilos específicos da página Apps -->
-  <style>
-    .apps-header {
-      margin-bottom: 2rem;
-    }
-
-    .apps-header h1 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .apps-header p {
-      color: #ffffff;
-      opacity: 0.85;
-    }
-
-    .apps-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1.5rem;
-    }
-
-    .app-card {
-      background: #d9d9d9;
-      border-radius: 18px;
-      padding: 1.5rem;
-      text-align: left;
-      display: flex;
-      flex-direction: column;
-      gap: 0.8rem;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .app-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
-    }
-
-    .app-header {
-      display: flex;
-      align-items: center;
-      gap: 0.8rem;
-    }
-
-    .app-icon {
-      width: 56px;
-      height: 56px;
-      border-radius: 12px;
-      object-fit: cover;
-      background: #ffffff;
-    }
-
-    .app-name {
-      font-weight: 600;
-      font-size: 1.05rem;
-    }
-
-    .app-desc {
-      font-size: 0.9rem;
-      line-height: 1.5;
-      color: #333333;
-    }
-
-    .app-actions {
-      display: flex;
-      gap: 0.6rem;
-      margin-top: auto;
-    }
-
-    .app-btn {
-      flex: 1;
-      text-align: center;
-      padding: 0.55rem;
-      border-radius: 10px;
-      font-size: 0.85rem;
-      font-weight: 500;
-      text-decoration: none;
-      color: #000000;
-      background: #ffffff;
-      transition: background 0.2s ease;
-    }
-
-    .app-btn:hover {
-      background: #f0f0f0;
-    }
-
-    .back-home {
-      display: inline-block;
-      margin-top: 2rem;
-      text-decoration: none;
-      font-size: 0.9rem;
-      color: #ffffff;
-      opacity: 0.85;
-    }
-  </style>
-
-  
-
+  <link rel="icon" href="img/logo.webp" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/apps.css" />
 </head>
 
 <body>
 <main class="page">
 
-  <!-- CABEÇALHO -->
   <header class="apps-header">
     <h1>Aplicativos</h1>
     <p>Confira os apps desenvolvidos pela JWO Mobile</p>
   </header>
 
-  <!-- GRID DE APPS -->
   <section class="apps-grid">
 
-    <!-- APP 1 -->
     <article class="app-card">
       <div class="app-header">
-        <img src="app1-icon.png" alt="App 1" class="app-icon">
-        <div class="app-name">Meu App 1</div>
+        <img src="img/app1-icon.webp" alt="Ícone do app Meu App 1" class="app-icon" loading="lazy">
+        <strong class="app-name">Meu App 1</strong>
       </div>
 
       <p class="app-desc">
-        Aplicativo moderno, rápido e seguro. Desenvolvido para oferecer a melhor experiência ao usuário.
+        Aplicativo moderno, rápido e seguro, focado em oferecer a melhor experiência ao usuário.
       </p>
 
       <div class="app-actions">
@@ -146,24 +41,17 @@
       </div>
     </article>
 
-    <!-- APP 2 (RESERVADO PARA USO FUTURO) -->
-    <article class="app-card">
+    <article class="app-card disabled">
       <div class="app-header">
-        <img src="draw.png" alt="App futuro" class="app-icon">
-        <div class="app-name">Em breve app JWO Desenhar</div>
+        <img src="img/draw.webp" alt="Ícone do app em desenvolvimento" class="app-icon" loading="lazy">
+        <strong class="app-name">JWO Desenhar</strong>
       </div>
 
-      <p class="app-desc"></p>
-
-      <div class="app-actions">
-        <a href="#" class="app-btn"></a>
-        <a href="#" class="app-btn"></a>
-      </div>
+      <p class="app-desc">Aplicativo em desenvolvimento. Em breve disponível.</p>
     </article>
 
   </section>
 
-  <!-- VOLTAR -->
   <a href="index.html" class="back-home">← Voltar para a Home</a>
 
 </main>

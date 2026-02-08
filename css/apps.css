@@ -1,0 +1,75 @@
+.apps-header {
+  margin-bottom: 2rem;
+}
+
+.apps-header h1 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.apps-header p {
+  color: var(--text-light);
+  opacity: 0.9;
+}
+
+.apps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.app-card {
+  background: var(--card-bg);
+  border-radius: 18px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.app-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.app-card.disabled {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.app-header {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.app-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.app-actions {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: auto;
+}
+
+.app-btn {
+  flex: 1;
+  padding: 0.6rem;
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--text-dark);
+}
+
+.back-home {
+  display: inline-block;
+  margin-top: 2rem;
+  color: var(--text-light);
+  opacity: 0.85;
+  text-decoration: none;
+}
