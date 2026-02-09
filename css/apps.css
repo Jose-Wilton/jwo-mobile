@@ -11,12 +11,14 @@
   opacity: 0.9;
 }
 
+/* GRID */
 .apps-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.5rem;
 }
 
+/* CARD */
 .app-card {
   background: var(--card-bg);
   border-radius: 18px;
@@ -33,19 +35,15 @@
 }
 
 .app-card.disabled {
-  background: var(--card-bg);
-  border-radius: 18px;
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  opacity: 0.6;
+  pointer-events: none;
 }
 
+/* HEADER APP */
 .app-header {
   display: flex;
-  gap: 0.8rem;
   align-items: center;
+  gap: 0.8rem;
 }
 
 .app-icon {
@@ -55,6 +53,13 @@
   background: var(--bg-app);
 }
 
+/* TEXTO */
+.app-desc {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* BOTÕES */
 .app-actions {
   display: flex;
   gap: 0.6rem;
@@ -71,6 +76,7 @@
   color: var(--text-dark);
 }
 
+/* VOLTAR */
 .back-home {
   display: inline-block;
   margin-top: 2rem;

@@ -1,0 +1,49 @@
+:root {
+  --bg-main: #787879;
+  --bg-app: #ffffff;
+  --card-bg: #d9d9d9;
+  --text-dark: #000000;
+  --text-light: #ffffff;
+  --accent: #ccd6f6;
+  --radius-lg: 20px;
+  --radius-md: 14px;
+}
+
+/* RESET */
+* {
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+  background: var(--bg-main);
+  color: var(--text-dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* PAGE */
+.page {
+  width: 100%;
+  max-width: 900px;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* FOOTER */
+.site-footer {
+  margin: 2rem 0 1rem;
+  font-size: 0.85rem;
+  color: var(--text-light);
+  opacity: 0.8;
+}
+
+/* MOBILE BASE */
+@media (max-width: 480px) {
+  .page {
+    padding: 1.25rem;
+  }
+}
