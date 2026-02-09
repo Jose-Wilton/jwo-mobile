@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Aplicativos | JWO Mobile</title>
 
+  <!-- Fontes -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
@@ -12,23 +13,32 @@
 
   <!-- Ícone -->
   <link rel="icon" href="img/logo.png" />
-  
+
   <!-- CSS -->
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/apps.css">
-
 </head>
 
 <body>
+
 <main class="page">
 
+  <!-- BOTÃO VOLTAR (ESTILO HOME) -->
+  <a href="index.html" class="top-apps-button" aria-label="Voltar para a Home">
+    <img src="img/home-icon.png" alt="" class="apps-icon-img" loading="lazy">
+    Home
+  </a>
+
+  <!-- HEADER -->
   <header class="apps-header">
     <h1>Aplicativos</h1>
     <p>Confira os apps desenvolvidos pela JWO Mobile</p>
   </header>
 
+  <!-- GRID DE APPS -->
   <section class="apps-grid">
 
+    <!-- APP 1 -->
     <article class="app-card">
       <div class="app-header">
         <img src="img/app1-icon.webp" alt="Ícone do app Meu App 1" class="app-icon" loading="lazy">
@@ -45,24 +55,26 @@
       </div>
     </article>
 
+    <!-- APP EM DESENVOLVIMENTO -->
     <article class="app-card disabled">
       <div class="app-header">
-        <img src="img/draw.png" alt="Ícone do app em desenvolvimento" class="app-icon" loading="lazy">
+        <img src="img/draw.png" alt="Ícone do app JWO Desenhar" class="app-icon" loading="lazy">
         <strong class="app-name">JWO Desenhar</strong>
       </div>
 
-      <p class="app-desc">Aplicativo em desenvolvimento. Em breve disponível.</p>
-      
+      <p class="app-desc">
+        Aplicativo em desenvolvimento. Em breve disponível.
+      </p>
+
       <div class="app-actions">
-        <a href="#" class="app-btn"></a>
-        <a href="#" class="app-btn"></a>
+        <span class="app-btn"></span>
+        <span class="app-btn"></span>
       </div>
     </article>
 
   </section>
 
-  <a href="index.html" class="back-home">← Voltar para a Home</a>
-
 </main>
+
 </body>
 </html>
