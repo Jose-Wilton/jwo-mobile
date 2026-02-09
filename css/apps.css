@@ -35,8 +35,13 @@
 }
 
 .app-card.disabled {
-  opacity: 0.6;
-  pointer-events: none;
+  background: var(--card-bg);
+  border-radius: 18px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 /* HEADER APP */
@@ -84,3 +89,47 @@
   opacity: 0.85;
   text-decoration: none;
 }
+.back-home {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.back-home-icon {
+  width: 16px;
+  height: 16px;
+}
+/* BOTÃO VOLTAR (EMBAIXO, ESTILO APP) */
+.back-home-button {
+  margin: 3rem auto 0;   /* empurra para baixo e centraliza */
+  width: fit-content;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  padding: 0.6rem 0.9rem;
+  background: var(--card-bg);
+  color: var(--text-dark);
+  text-decoration: none;
+  border-radius: var(--radius-md);
+
+  font-size: 0.75rem;
+  font-weight: 500;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.back-home-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.back-home-icon {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
