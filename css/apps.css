@@ -99,14 +99,15 @@
   width: 16px;
   height: 16px;
 }
-/* BOTÃO VOLTAR PARA O ÍNICIO */
+/* BOTÃO VOLTAR (EMBAIXO, ESTILO APP) */
 .back-home-button {
-  margin: 3rem auto 0;
+  margin: 3rem auto 0;   /* empurra para baixo e centraliza */
   width: fit-content;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 6px;
 
   padding: 0.6rem 0.9rem;
@@ -119,6 +120,17 @@
   font-weight: 500;
 
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.back-home-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.back-home-icon {
+  width: 18px;
+  height: 18px;
+  display: block;
 }
 
 .back-home-button:hover {
