@@ -132,4 +132,10 @@
   height: 18px;
   display: block;
 }
+/* TEXTO DO CARD ALINHADO À ESQUERDA */
+.app-card {
+  text-align: left;
+}
+
+
 
