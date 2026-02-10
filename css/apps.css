@@ -99,3 +99,34 @@
   width: 16px;
   height: 16px;
 }
+/* BOTÃO VOLTAR PARA APPS */
+.back-home-button {
+  margin: 3rem auto 0;
+  width: fit-content;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+
+  padding: 0.6rem 0.9rem;
+  background: var(--card-bg);
+  color: var(--text-dark);
+  text-decoration: none;
+  border-radius: var(--radius-md);
+
+  font-size: 0.75rem;
+  font-weight: 500;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.back-home-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.back-home-icon {
+  width: 18px;
+  height: 18px;
+}
