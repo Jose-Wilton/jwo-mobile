@@ -136,6 +136,32 @@
 .app-card {
   text-align: left;
 }
+/* SUB-BLOCO DE DESTAQUES */
+.app-highlights {
+  margin-top: 1rem;
+  padding: 1rem 1.2rem;
+  
+  border-radius: 12px;
+  text-align: left;
+}
+
+.app-highlights-title {
+  display: block;
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.app-highlights-list {
+  margin: 0;
+  padding-left: 1.2rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.app-highlights-list li {
+  margin-bottom: 0.3rem;
+}
 
 
 
