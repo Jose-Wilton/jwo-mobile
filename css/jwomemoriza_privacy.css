@@ -1,0 +1,67 @@
+/* ================================
+   JWO MEMORIZA — PRIVACIDADE
+   ================================ */
+
+/* CARD PRINCIPAL */
+.app-card {
+  text-align: left;
+}
+
+/* BLOCO DE SEÇÕES DA PRIVACIDADE */
+.app-highlights {
+  margin-top: 0.8rem;
+  padding: 1rem 1.2rem;
+  border-radius: 12px;
+}
+
+/* TÍTULOS DAS SEÇÕES */
+.app-highlights-title {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* TEXTO PADRÃO */
+.app-desc {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* TEXTO FINAL CENTRALIZADO */
+.app-desc[style*="text-align:center"] {
+  margin-top: 1.2rem;
+}
+
+/* BOTÃO VOLTAR PARA A LISTA DE APLICATIVOS */
+.back-home-button {
+  margin: 3rem auto 0;
+  width: fit-content;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+
+  padding: 0.6rem 0.9rem;
+  background: var(--card-bg);
+  color: var(--text-dark);
+  text-decoration: none;
+  border-radius: var(--radius-md);
+
+  font-size: 0.75rem;
+  font-weight: 500;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.back-home-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* ÍCONE DO BOTÃO */
+.back-home-icon {
+  width: 18px;
+  height: 18px;
+}
