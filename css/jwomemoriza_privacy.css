@@ -1,35 +1,33 @@
-/* CARD PRINCIPAL */
+/* CARD */
 .app-card {
   text-align: left;
 }
 
-/* BLOCO DE SEÇÕES DA PRIVACIDADE */
-.app-highlights {
-  margin-top: 0.8rem;
-  padding: 1rem 1.2rem;
-  border-radius: 12px;
+/* SEÇÕES DA POLÍTICA */
+.privacy-section {
+  margin-top: 1rem;
 }
 
-/* TÍTULOS DAS SEÇÕES */
-.app-highlights-title {
-  display: block;
-  margin-bottom: 0.4rem;
-  font-weight: 600;
+.privacy-section h2 {
   font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
 }
 
-/* TEXTO PADRÃO */
-.app-desc {
+.privacy-section p {
   font-size: 0.9rem;
   line-height: 1.5;
+  margin-bottom: 0.4rem;
 }
 
-/* TEXTO FINAL CENTRALIZADO */
-.app-desc[style*="text-align:center"] {
-  margin-top: 1.2rem;
+/* TEXTO FINAL */
+.privacy-update {
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+  opacity: 0.8;
 }
 
-/* BOTÃO VOLTAR PARA A LISTA DE APLICATIVOS */
+/* BOTÃO VOLTAR */
 .back-home-button {
   margin: 3rem auto 0;
   width: fit-content;
@@ -56,8 +54,12 @@
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* ÍCONE DO BOTÃO */
 .back-home-icon {
   width: 18px;
   height: 18px;
+}
+.privacy-section ul {
+  padding-left: 1.2rem;
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
 }
