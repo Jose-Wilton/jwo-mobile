@@ -1,57 +1,79 @@
-/* CARD CENTRALIZADO */
+/* CARD*/
 .app-card {
-  text-align: center;
+  text-align: left;   /* Igual ao privacy */
   max-width: 520px;
   margin: 0 auto;
   padding: 2rem;
 }
 
-/* ÍCONE */
-.app-icon {
-  width: 110px;
+/* CABEÇALHO (Ícone + Nome lado a lado)*/
+.app-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   margin-bottom: 1rem;
 }
 
-/* NOME */
-.app-name {
-  display: block;
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-bottom: 0.8rem;
+/*ÍCONE (SEM DISTORCER)*/
+.app-icon {
+  width: 80px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 16px;
 }
 
-/* DESCRIÇÃO */
+/* NOME*/
+.app-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* DESCRIÇÃO*/
 .app-desc {
   font-size: 0.95rem;
   line-height: 1.6;
-  margin-bottom: 1.2rem;
+  margin-top: 1rem;
 }
 
-/* BOTÃO */
+/* BOTÃO CENTRALIZADO*/
 .app-btn {
-  display: inline-block;
-  padding: 0.85rem 1.4rem;
+  display: block;
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 0.9rem;
   font-size: 0.95rem;
-  border-radius: 8px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.2s ease;
 }
 
-/* AVISO */
+.app-btn:hover {
+  transform: translateY(-2px);
+}
+
+/*AVISO*/
 .download-warning {
   font-size: 0.75rem;
   opacity: 0.7;
   margin-top: 1.2rem;
-  line-height: 1.4;
+  line-height: 1.5;
+  text-align: center;
 }
 
-/* RESPONSIVO */
+
+/*RESPONSIVO*/
 @media (max-width: 600px) {
 
   .app-card {
     padding: 1.4rem;
   }
 
+  .app-header {
+    gap: 0.8rem;
+  }
+
   .app-icon {
-    width: 90px;
+    width: 65px;
   }
 
   .app-name {
@@ -63,9 +85,8 @@
   }
 
   .app-btn {
-    width: 100%;
     font-size: 1rem;
-    padding: 0.9rem;
+    padding: 1rem;
   }
 
 }
