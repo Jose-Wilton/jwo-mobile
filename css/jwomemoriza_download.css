@@ -1,0 +1,21 @@
+.download-card {
+  text-align: center;
+  padding: 2rem;
+}
+
+.download-title {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+}
+
+.download-btn {
+  margin-top: 1.5rem;
+  display: inline-block;
+}
+
+.download-warning {
+  font-size: 0.75rem;
+  opacity: 0.7;
+  margin-top: 1.2rem;
+  line-height: 1.4;
+}
