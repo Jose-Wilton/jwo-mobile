@@ -10,12 +10,12 @@
   --radius-md: 14px;
 }
 
-/* RESET */
+/* Reset */
 * {
   box-sizing: border-box;
 }
 
-/* BODY */
+/* Body */
 body {
   margin: 0;
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
@@ -26,7 +26,7 @@ body {
   align-items: center;
 }
 
-/* PAGE */
+/* Page */
 .page {
   position: relative;
   width: 100%;
@@ -35,15 +35,18 @@ body {
   text-align: center;
 }
 
-/* FOOTER */
+/* Footer */
 .site-footer {
   margin: 2rem 0 1rem;
   font-size: 0.85rem;
   color: var(--text-light);
-  opacity: 0.8;
+  opacity: 1.4;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-style: normal;
 }
 
-/* MOBILE BASE */
+/* Mobile Base */
 @media (max-width: 480px) {
   .page {
     padding: 1.25rem;

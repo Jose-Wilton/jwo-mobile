@@ -4,21 +4,29 @@
 
 .apps-header h1 {
   font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  font-style: normal;
 }
 
 .apps-header p {
   color: var(--text-light);
   opacity: 0.9;
+  font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-/* GRID */
+/* Grid */
 .apps-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.5rem;
+
 }
 
-/* CARD */
+/* Card */
 .app-card {
   background: var(--card-bg);
   border-radius: 18px;
@@ -27,6 +35,10 @@
   flex-direction: column;
   gap: 0.8rem;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .app-card:hover {
@@ -42,9 +54,13 @@
   flex-direction: column;
   gap: 0.8rem;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  font-style: normal;
 }
 
-/* HEADER APP */
+/* Header App */
 .app-header {
   display: flex;
   align-items: center;
@@ -58,17 +74,26 @@
   background: var(--bg-app);
 }
 
-/* TEXTO */
+/* Texto */
 .app-desc {
+  font-size: 0.4rem;
+  line-height: 1.4;
+  text-align: center;
   font-size: 0.9rem;
-  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
-/* BOTÕES */
+/* Botões */
 .app-actions {
   display: flex;
   gap: 0.6rem;
   margin-top: auto;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .app-btn {
@@ -81,27 +106,9 @@
   color: var(--text-dark);
 }
 
-/* VOLTAR */
-.back-home {
-  display: inline-block;
-  margin-top: 2rem;
-  color: var(--text-light);
-  opacity: 0.85;
-  text-decoration: none;
-}
-.back-home {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.back-home-icon {
-  width: 16px;
-  height: 16px;
-}
-/* BOTÃO VOLTAR (EMBAIXO, ESTILO APP) */
+/* Botão Voltar */
 .back-home-button {
-  margin: 3rem auto 0;   /* empurra para baixo e centraliza */
+  margin: 3rem auto 0;
   width: fit-content;
 
   display: flex;
@@ -116,8 +123,10 @@
   text-decoration: none;
   border-radius: var(--radius-md);
 
-  font-size: 0.75rem;
-  font-weight: 500;
+  font-size: 0.9rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-style: normal;
 
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
