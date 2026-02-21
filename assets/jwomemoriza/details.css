@@ -1,93 +1,113 @@
-/* CARD*/
-.app-card {
-  text-align: left;   /* Igual ao privacy */
-  max-width: 520px;
+/*Card Principal*/
+.details-card {
+  background: var(--card-bg);
+  border-radius: 20px;
+  padding: 2.2rem;
+  max-width: 680px;
   margin: 0 auto;
-  padding: 2rem;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
 }
 
-/* CABEÇALHO (Ícone + Nome lado a lado)*/
-.app-header {
+/*Header (Ícone + Nome)*/
+.details-header {
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.8rem;
 }
 
-/*ÍCONE (SEM DISTORCER)*/
-.app-icon {
+.details-icon {
   width: 80px;
   height: auto;
   object-fit: contain;
-  border-radius: 16px;
+  border-radius: 12px;
 }
 
-/* NOME*/
-.app-name {
-  font-size: 1.2rem;
+.details-name {
+  font-size: 1.4rem;
   font-weight: 600;
 }
 
-/* DESCRIÇÃO*/
-.app-desc {
-  font-size: 0.95rem;
-  line-height: 1.6;
+/*Descrição*/
+.details-desc {
+  font-size: 0.97rem;
+  line-height: 1.75;
+  text-align: left;
   margin-top: 1rem;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Destaques Modernos*/
+.details-highlights {
+  margin-top: 2.5rem;
   text-align: center;
 }
 
-/* BOTÃO CENTRALIZADO*/
-.app-btn {
+.details-highlights-title {
   display: block;
-  width: 100%;
-  margin-top: 1.5rem;
-  padding: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  font-size: 1.05rem;
+}
+
+/* Remove pontos padrão */
+.details-highlights-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  text-align: left;
+}
+
+/* Cada item */
+.details-highlights-list li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 0.8rem;
   font-size: 0.95rem;
-  border-radius: 10px;
-  text-align: center;
-  transition: transform 0.2s ease;
 }
 
-.app-btn:hover {
-  transform: translateY(-2px);
+/* Ícone check preto */
+.details-highlights-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--content);
+  font-weight: bold;
+  font-size: 1rem;
 }
 
-/*AVISO*/
-.download-warning {
-  font-size: 0.75rem;
-  opacity: 0.7;
-  margin-top: 1.2rem;
-  line-height: 1.5;
-  text-align: center;
+/*Texto Final*/
+.details-desc strong {
+  display: block;
+  margin-top: 2.2rem;
+  font-size: 0.98rem;
 }
 
-
-/*RESPONSIVO*/
+/*Responsivo*/
 @media (max-width: 600px) {
 
-  .app-card {
-    padding: 1.4rem;
+  .details-card {
+    padding: 1.6rem;
   }
 
-  .app-header {
-    gap: 0.8rem;
+  .details-icon {
+    width: 70px;
+    height: 70px;
   }
 
-  .app-icon {
-    width: 65px;
+  .details-name {
+    font-size: 1.2rem;
   }
 
-  .app-name {
-    font-size: 1.1rem;
-  }
-
-  .app-desc {
+  .details-desc {
     font-size: 0.9rem;
   }
 
-  .app-btn {
-    font-size: 1rem;
-    padding: 1rem;
+  .details-highlights-list li {
+    font-size: 0.9rem;
   }
-
 }
