@@ -77,7 +77,6 @@
 
   font-family: 'Roboto', sans-serif;
   font-size: 1.2rem;
-  font-style: normal;
   font-weight: 800;
 
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -92,9 +91,8 @@
 .site-footer {
 color: var(--text-light);
 font-family: 'Montserrat', sans-serif;
-font-size: 0.85rem;
-font-style: normal;
-font-weight: 200;
+font-size: 0.9rem;
+font-weight: 400;
 margin: 2rem 0 1rem;
 opacity: 1.4;
 }

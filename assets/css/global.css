@@ -22,7 +22,7 @@ background: var(--bg-main);
 color: var(--text-dark);
 display: flex;
 flex-direction: column;
-font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+font-family: 'Roboto', sans-serif;
 margin: 0;
 }
 
