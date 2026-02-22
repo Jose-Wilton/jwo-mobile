@@ -1,49 +1,49 @@
 /* Header */
 .brand {
-  position: relative;
   margin-bottom: 1.5rem;
+  position: relative;
 }
 
 .brand-title {
-  margin: 0.75rem 0 0.25rem;
-  font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 800;
   font-family: 'Montserrat', sans-serif;
+  font-size: clamp(2rem, 4vw, 3rem);
   font-style: normal;
+  font-weight: 800;
+  margin: 0.75rem 0 0.25rem;
 }
 
 .brand-subtitle {
-  margin-bottom: 1.5rem;
   color: var(--text-light);
-  opacity: 0.9;
-  font-size: 1.2rem;
   font-family: 'Roboto', sans-serif;
-  font-weight: 600;
+  font-size: 1.2rem;
   font-style: normal;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
 }
 
 .divider {
-  width: 200px;
-  height: 8px;
   background: var(--accent);
-  margin: 20px auto;
   border-radius: 4px;
+  height: 8px;
+  margin: 20px auto;
+  width: 200px;
 }
 
 /* Logo */
 .logo {
-  width: 260px;
+  border-radius: 50%;
   height: 260px;
   margin: 0 auto;
-  border-radius: 50%;
   overflow: hidden;
+  width: 260px;
 }
 
 .logo-img {
-  width: 100%;
   height: 100%;
   object-fit: contain;
   padding: 16px;
+  width: 100%;
 }
 
 /* Card */
@@ -55,79 +55,55 @@
 
 .card p {
   color: var(--text-dark);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
   line-height: 1.4;
   margin: 0;
-  font-size: 1.2rem;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 600;
-  font-style: normal;
 }
 
 /* Botão Contato */
 .contact-button-light {
-  display: inline-flex;
   align-items: center;
+  background: var(--card-bg);
+  border-radius: var(--radius-md);
+  color: var(--text-dark);
+  display: inline-flex;
   justify-content: center;
+  
   margin-top: 1.8rem;
   padding: 0.9rem 1.8rem;
-  background: var(--card-bg);
-  color: var(--text-dark);
-  border-radius: var(--radius-md);
   text-decoration: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
 
-  font-size: 1.2rem;
   font-family: 'Roboto', sans-serif;
-  font-weight: 800;
+  font-size: 1.2rem;
   font-style: normal;
-  
+  font-weight: 800;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .contact-button-light:hover {
-  transform: translateY(-2px);
   box-shadow: 0 10px 25px rgba(0,0,0,.15);
-}
-
-/* Botão Aplicativos */
-.top-apps-button {
-  position: absolute;
-  top: 0;
-  right: 0;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
-
-  padding: 0.6rem 0.9rem;
-  background: var(--card-bg);
-  color: var(--text-dark);
-  border-radius: var(--radius-md);
-  text-decoration: none;
-
-  font-size: 0.9rem;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.top-apps-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(0,0,0,.15);
 }
 
-.apps-icon-img {
-  width: 18px;
-  height: 18px;
+/* Footer */
+.site-footer {
+color: var(--text-light);
+font-family: 'Montserrat', sans-serif;
+font-size: 0.85rem;
+font-style: normal;
+font-weight: 200;
+margin: 2rem 0 1rem;
+opacity: 1.4;
 }
 
 /* Mobile */
 @media (max-width: 480px) {
   .logo {
-    width: 120px;
     height: 120px;
+    width: 120px;
   }
 
   .contact-button-light {

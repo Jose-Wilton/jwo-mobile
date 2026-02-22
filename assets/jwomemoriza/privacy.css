@@ -1,65 +1,129 @@
-/* CARD */
-.app-card {
+/* Card Principal*/
+.privacy-card {
+  background: var(--card-bg);
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 680px;
+  margin: 0 auto;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+/* Header Principal */
+
+.privacy-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.privacy-header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 0.8rem;
+}
+
+.privacy-header p {
+  color: var(--text-light);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+/*Descrição*/
+.privacy-desc {
+  color: var(--text-dark);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.4;
+  margin: 1rem auto 0;
+  max-width: 560px;
   text-align: left;
 }
 
-/* SEÇÕES DA POLÍTICA */
+/* Header do Card (Ícone + Nome) */
+.privacy-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.8rem;
+}
+
+.privacy-icon {
+  width: 80px;
+  border-radius: 12px;
+}
+
+.privacy-name {
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+
+/* Seções da Política */
 .privacy-section {
-  margin-top: 1rem;
+  margin-top: 1.4rem;
 }
 
 .privacy-section h2 {
-  font-size: 0.95rem;
-  font-weight: 600;
+  color: var(--text-dark);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
   margin-bottom: 0.4rem;
 }
 
 .privacy-section p {
-  font-size: 0.9rem;
-  line-height: 1.5;
-  margin-bottom: 0.4rem;
-}
-
-/* TEXTO FINAL */
-.privacy-update {
-  margin-top: 1.5rem;
-  font-size: 0.8rem;
-  opacity: 0.8;
-}
-
-/* BOTÃO VOLTAR */
-.back-home-button {
-  margin: 3rem auto 0;
-  width: fit-content;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
-
-  padding: 0.6rem 0.9rem;
-  background: var(--card-bg);
   color: var(--text-dark);
-  text-decoration: none;
-  border-radius: var(--radius-md);
-
-  font-size: 0.75rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
   font-weight: 500;
-
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
 }
 
-.back-home-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
-
-.back-home-icon {
-  width: 18px;
-  height: 18px;
-}
 .privacy-section ul {
+  color: var(--text-dark);
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.4;
   padding-left: 1.2rem;
   margin: 0.5rem 0;
-  font-size: 0.9rem;
+}
+
+/* Texto Final */
+.privacy-update {
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.98rem;
+  font-weight: 600;
+  margin-top: 2.2rem;
+  opacity: 0.8;
+  text-align: center;
+}
+/*Responsivo*/
+@media (max-width: 600px) {
+
+  .details-card {
+    padding: 1.6rem;
+  }
+
+  .details-icon {
+    height: 70px;
+    width: 70px;
+  }
+
+  .details-name {
+    font-size: 1.2rem;
+  }
+
+  .details-desc {
+    font-size: 0.9rem;
+  }
+
+  .details-highlights-list li {
+    font-size: 0.9rem;
+  }
 }

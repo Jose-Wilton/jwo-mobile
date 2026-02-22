@@ -6,83 +6,70 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
   font-weight: 800;
-  font-style: normal;
 }
 
 .apps-header p {
   color: var(--text-light);
-  opacity: 0.9;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.2rem;
-  font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  font-style: normal;
+  opacity: 0.9;
 }
 
 /* Grid */
 .apps-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.5rem;
-
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
 /* Card */
 .app-card {
   background: var(--card-bg);
   border-radius: 18px;
-  padding: 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+  padding: 1.5rem;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+
   font-family: 'Baloo 2', sans-serif;
-  font-size: 2.4rem;
+  font-size: 1.4rem;
   font-weight: 600;
-  font-style: normal;
 }
 
 .app-card:hover {
-  transform: translateY(-4px);
   box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  transform: translateY(-4px);
 }
 
+/* Caso queira estilo diferente no futuro */
 .app-card.disabled {
-  background: var(--card-bg);
-  border-radius: 18px;
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  font-family: 'Baloo 2', sans-serif;
-  font-size: 2.4rem;
-  font-weight: 600;
-  font-style: normal;
+  opacity: 0.6;
+  pointer-events: none;
 }
 
 /* Header App */
 .app-header {
-  display: flex;
   align-items: center;
+  display: flex;
   gap: 0.8rem;
 }
 
 .app-icon {
-  width: 56px;
-  height: 56px;
-  border-radius: 12px;
   background: var(--bg-app);
+  border-radius: 12px;
+  height: 56px;
+  width: 56px;
 }
 
 /* Texto */
 .app-desc {
-  font-size: 0.4rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
   line-height: 1.4;
   text-align: center;
-  font-size: 0.9rem;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  font-style: normal;
 }
 
 /* Botões */
@@ -90,64 +77,52 @@
   display: flex;
   gap: 0.6rem;
   margin-top: auto;
+
   font-family: 'Poppins', sans-serif;
   font-size: 0.9rem;
   font-weight: 600;
-  font-style: normal;
 }
 
 .app-btn {
+  background: var(--bg-app);
+  border-radius: 10px;
+  color: var(--text-dark);
   flex: 1;
   padding: 0.6rem;
   text-align: center;
-  background: var(--bg-app);
-  border-radius: 10px;
   text-decoration: none;
-  color: var(--text-dark);
 }
 
 /* Botão Voltar */
 .back-home-button {
-  margin: 3rem auto 0;
-  width: fit-content;
-
+  align-items: center;
+  background: var(--card-bg);
+  border-radius: var(--radius-md);
+  color: var(--text-dark);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 6px;
+  justify-content: center;
 
+  margin: 3rem auto 0;
   padding: 0.6rem 0.9rem;
-  background: var(--card-bg);
-  color: var(--text-dark);
   text-decoration: none;
-  border-radius: var(--radius-md);
+  width: fit-content;
 
+  font-family: 'Poppins', sans-serif;
   font-size: 0.9rem;
-  font-family: 'Roboto', sans-serif;
   font-weight: 600;
-  font-style: normal;
 
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .back-home-button:hover {
-  transform: translateY(-2px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
 }
 
 .back-home-icon {
-  width: 18px;
-  height: 18px;
   display: block;
-}
-
-.back-home-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
-
-.back-home-icon {
-  width: 18px;
   height: 18px;
+  width: 18px;
 }

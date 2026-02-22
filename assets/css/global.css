@@ -1,13 +1,13 @@
 :root {
-  --bg-main: #787879;
-  --bg-app: #ffffff;
-  --card-bg: #d9d9d9;
-  --text-dark: #000000;
-  --content: #000000;
-  --text-light: #ffffff;
-  --accent: #ccd6f6;
-  --radius-lg: 20px;
-  --radius-md: 14px;
+--accent: #ccd6f6;
+--bg-app: #ffffff;
+--bg-main: #787879;
+--card-bg: #d9d9d9;
+--content: #000000;
+--radius-lg: 20px;
+--radius-md: 14px;
+--text-dark: #000000;
+--text-light: #ffffff;
 }
 
 /* Reset */
@@ -17,33 +17,56 @@
 
 /* Body */
 body {
-  margin: 0;
-  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-  background: var(--bg-main);
-  color: var(--text-dark);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+align-items: center;
+background: var(--bg-main);
+color: var(--text-dark);
+display: flex;
+flex-direction: column;
+font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+margin: 0;
 }
 
 /* Page */
 .page {
-  position: relative;
-  width: 100%;
-  max-width: 900px;
-  padding: 2rem;
-  text-align: center;
+max-width: 900px;
+padding: 2rem;
+position: relative;
+text-align: center;
+width: 100%;
 }
 
-/* Footer */
-.site-footer {
-  margin: 2rem 0 1rem;
-  font-size: 0.85rem;
-  color: var(--text-light);
-  opacity: 1.4;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 200;
-  font-style: normal;
+/* Botão Aplicativos */
+.top-apps-button {
+  align-items: center;
+  background: var(--card-bg);
+  border-radius: var(--radius-md);
+  color: var(--text-dark);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  justify-content: center;
+  
+  padding: 0.6rem 0.9rem;
+  position: absolute;
+  right: 0;
+  text-decoration: none;
+  top: 0;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.top-apps-button:hover {
+  box-shadow: 0 10px 25px rgba(0,0,0,.15);
+  transform: translateY(-2px);
+}
+
+.apps-icon-img {
+  height: 18px;
+  width: 18px;
 }
 
 /* Mobile Base */
