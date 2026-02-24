@@ -61,6 +61,39 @@
   line-height: 1.4;
   margin: 0;
 }
+/* Botão Aplicativos */
+.top-apps-button {
+  align-items: center;
+  background: var(--card-bg);
+  border-radius: var(--radius-md);
+  color: var(--text-dark);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  justify-content: center;
+  
+  padding: 0.6rem 0.9rem;
+  position: absolute;
+  right: 0;
+  text-decoration: none;
+  top: 0;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.top-apps-button:hover {
+  box-shadow: 0 10px 25px rgba(0,0,0,.15);
+  transform: translateY(-2px);
+}
+
+.top-apps-icon-img {
+  height: 18px;
+  width: 18px;
+}
 
 /* Botão Contato */
 .contact-button-light {

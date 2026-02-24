@@ -1,91 +1,131 @@
-/* CARD*/
-.app-card {
-  text-align: left;   /* Igual ao privacy */
+/* ====================================
+   DOWNLOAD PAGE - JWO Memoriza
+   Totalmente independente
+==================================== */
+
+/* HEADER SUPERIOR */
+.download-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.download-header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.download-header p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  opacity: 0.9;
+  color: var(--text-light);
+}
+
+/* CARD PRINCIPAL */
+.download-card {
+  background: var(--card-bg);
+  border-radius: 18px;
   max-width: 520px;
   margin: 0 auto;
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
-/* CABEÇALHO (Ícone + Nome lado a lado)*/
-.app-header {
+/* HEADER DO CARD */
+.download-card-header {
   display: flex;
   align-items: center;
   gap: 1rem;
   margin-bottom: 1rem;
 }
 
-/*ÍCONE (SEM DISTORCER)*/
-.app-icon {
+/* ÍCONE */
+.download-icon {
   width: 80px;
   height: auto;
   object-fit: contain;
   border-radius: 16px;
 }
 
-/* NOME*/
-.app-name {
-  font-size: 1.2rem;
+/* NOME DO APP */
+.download-name {
+  color: var(--text-dark);
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 1.4rem;
   font-weight: 600;
+
+  
 }
 
-/* DESCRIÇÃO*/
-.app-desc {
-  font-size: 0.95rem;
+/* DESCRIÇÃO */
+.download-desc {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
   line-height: 1.6;
   margin-top: 1rem;
   text-align: center;
+  
 }
 
-/* BOTÃO CENTRALIZADO*/
-.app-btn {
+/* BOTÃO DOWNLOAD */
+.download-btn {
   display: block;
   width: 100%;
   margin-top: 1.5rem;
   padding: 0.9rem;
-  font-size: 0.95rem;
+  
   border-radius: 10px;
   text-align: center;
-  transition: transform 0.2s ease;
+  background: var(--bg-app);
+  color: var(--text-dark);
+  text-decoration: none;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.app-btn:hover {
+.download-btn:hover {
   transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-/*AVISO*/
+/* AVISO */
 .download-warning {
   font-size: 0.75rem;
   opacity: 0.7;
   margin-top: 1.2rem;
   line-height: 1.5;
   text-align: center;
+  font-family: 'Poppins', sans-serif;
 }
 
-
-/*RESPONSIVO*/
+/* RESPONSIVO */
 @media (max-width: 600px) {
 
-  .app-card {
+  .download-card {
     padding: 1.4rem;
   }
 
-  .app-header {
-    gap: 0.8rem;
-  }
-
-  .app-icon {
+  .download-icon {
     width: 65px;
   }
 
-  .app-name {
+  .download-app-name {
     font-size: 1.1rem;
   }
 
-  .app-desc {
+  .download-desc {
     font-size: 0.9rem;
   }
 
-  .app-btn {
+  .download-btn {
     font-size: 1rem;
     padding: 1rem;
   }
