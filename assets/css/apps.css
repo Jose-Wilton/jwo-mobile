@@ -43,10 +43,24 @@
   transform: translateY(-4px);
 }
 
-/* Caso queira estilo diferente no futuro */
-.app-card.disabled {
-  opacity: 0.6;
-  pointer-events: none;
+/* Card */
+.app-jwodesenhar {
+  background: var(--card-bg);
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.app-card:hover {
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  transform: translateY(-4px);
 }
 
 /* Header App */

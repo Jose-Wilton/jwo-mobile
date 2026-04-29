@@ -1,0 +1,129 @@
+/* Header Principal (Topo)*/
+.download-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.download-header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.download-header p {
+  color: var(--text-light);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  opacity: 0.9;
+
+}
+
+/*Card Principal*/
+.download-card {
+  background: var(--card-bg);
+  border-radius: 18px;
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header do Card (Ícone + Nome) */
+.download-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.download-icon {
+  width: 80px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 16px;
+}
+
+.download-name {
+  color: var(--text-dark);
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+/* Descrição */
+.download-desc {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.6;
+  margin-top: 1rem;
+  text-align: center;
+  
+}
+
+/* Botão Download */
+.download-btn {
+  display: block;
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 0.9rem;
+  
+  border-radius: 10px;
+  text-align: center;
+  background: var(--bg-app);
+  color: var(--text-dark);
+  text-decoration: none;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Aviso */
+.download-warning {
+  color: var(--text-dark);
+  font-size: 0.75rem;
+  opacity: 0.8;
+  margin-top: 1.2rem;
+  line-height: 1.5;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+
+  .download-card {
+    padding: 1.4rem;
+  }
+
+  .download-icon {
+    width: 65px;
+  }
+
+  .download-name {
+    font-size: 1.1rem;
+  }
+
+  .download-desc {
+    font-size: 0.9rem;
+  }
+
+  .download-btn {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  .download-warning {
+    font-size: 0.65rem;
+  } 
+
+}
