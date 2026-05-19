@@ -67,12 +67,11 @@
 /* Novo container para organizar os botões lado a lado */
 .download-actions {
   display: flex;
-  gap: 10px; /* Espaço entre os dois botões */
+  gap: 10px;
   margin-top: 1.5rem;
   width: 100%;
 }
 
-/* Ajustes no botão principal */
 .download-google-play {
   display: block;
   flex: 1;
@@ -96,7 +95,6 @@
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* Opcional: Estilo para o segundo botão (Inverte as cores, por exemplo) */
 .download-apk {
   display: block;
   flex: 1;
@@ -111,7 +109,7 @@
   font-size: 1rem;
   font-weight: 600;
 
-  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Usa a mesma cor de fundo do outro botão como borda */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 /* Aviso */
