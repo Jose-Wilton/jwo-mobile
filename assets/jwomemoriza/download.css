@@ -71,6 +71,22 @@
   margin-top: 1.5rem;
   width: 100%;
 }
+.download-apk {
+  display: block;
+  flex: 1;
+  padding: 0.9rem;
+  border-radius: 10px;
+  text-align: center;
+  background: var(--bg-app);
+  color: var(--text-dark);
+  text-decoration: none;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
 .download-google-play {
   display: block;
@@ -93,23 +109,6 @@
 .download-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
-
-.download-apk {
-  display: block;
-  flex: 1;
-  padding: 0.9rem;
-  border-radius: 10px;
-  text-align: center;
-  background: var(--bg-app);
-  color: var(--text-dark);
-  text-decoration: none;
-
-  font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
-
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 /* Aviso */
