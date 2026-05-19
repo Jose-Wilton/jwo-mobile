@@ -64,12 +64,21 @@
 }
 
 /* Botão Download */
-.download-btn {
-  display: block;
-  width: 100%;
+/* Novo container para organizar os botões lado a lado */
+.download-actions {
+  display: flex;
+  gap: 10px; /* Espaço entre os dois botões */
   margin-top: 1.5rem;
+  width: 100%;
+}
+
+/* Ajustes no botão principal */
+.download-google-play {
+  display: block;
+  flex: 1; /* Faz com que os botões dividam o espaço igualmente (50/50) */
+  /* margin-top: 1.5rem;  <-- REMOVA ESTA LINHA (foi movida para o container acima) */
   padding: 0.9rem;
-  
+
   border-radius: 10px;
   text-align: center;
   background: var(--bg-app);
@@ -86,6 +95,23 @@
 .download-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Opcional: Estilo para o segundo botão (Inverte as cores, por exemplo) */
+.download-apk {
+  padding: 0.9rem;
+
+  border-radius: 10px;
+  text-align: center;
+  background: var(--bg-app);
+  color: var(--text-dark);
+  text-decoration: none;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Usa a mesma cor de fundo do outro botão como borda */
 }
 
 /* Aviso */
