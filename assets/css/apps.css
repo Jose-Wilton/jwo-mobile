@@ -16,54 +16,17 @@
   opacity: 0.9;
 }
 
-/* Grid */
+/* Grid configurado para até 2 colunas e centralizado */
 .apps-grid {
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(2, minmax(260px, 1fr));
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-/* Card */
-.app-jwomemoriza {
-  background: var(--card-bg);
-  border-radius: 18px;
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-  padding: 1.5rem;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-
-  font-family: 'Baloo 2', sans-serif;
-  font-size: 1.4rem;
-  font-weight: 600;
-}
-
-.app-card:hover {
-  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
-  transform: translateY(-4px);
-}
-
-/* Card */
-.app-jwodesenhar {
-  background: var(--card-bg);
-  border-radius: 18px;
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-  padding: 1.5rem;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-
-  font-family: 'Baloo 2', sans-serif;
-  font-size: 1.4rem;
-  font-weight: 600;
-}
-
-.app-card:hover {
-  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
-  transform: translateY(-4px);
-}
-/* Card */
-.app-jwotictactoe {
+/* Estilo unificado para todos os Cards de Apps */
+.app-card {
   background: var(--card-bg);
   border-radius: 18px;
   display: flex;
@@ -158,4 +121,11 @@
   display: block;
   height: 18px;
   width: 18px;
+}
+
+/* Media Query opcional: se a tela do celular for muito pequena, os cards ficam em 1 coluna só */
+@media (max-width: 600px) {
+  .apps-grid {
+    grid-template-columns: 1fr;
+  }
 }
