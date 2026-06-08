@@ -34,10 +34,6 @@
   gap: 0.8rem;
   padding: 1.5rem;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-
-  font-family: 'Baloo 2', sans-serif;
-  font-size: 1.4rem;
-  font-weight: 600;
 }
 
 .app-card:hover {
@@ -50,6 +46,14 @@
   align-items: center;
   display: flex;
   gap: 0.8rem;
+}
+
+/* Força a fonte Baloo 2 diretamente no título */
+.app-name {
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
 }
 
 .app-icon {
@@ -89,41 +93,7 @@
   text-decoration: none;
 }
 
-/* Botão Início */
-.back-home-button {
-  align-items: center;
-  background: var(--card-bg);
-  border-radius: var(--radius-md);
-  color: var(--text-dark);
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  justify-content: center;
-
-  margin: 3rem auto 0;
-  padding: 0.6rem 0.9rem;
-  text-decoration: none;
-  width: fit-content;
-
-  font-family: 'Poppins', sans-serif;
-  font-size: 0.9rem;
-  font-weight: 600;
-
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.back-home-button:hover {
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-  transform: translateY(-2px);
-}
-
-.back-home-icon {
-  display: block;
-  height: 18px;
-  width: 18px;
-}
-
-/* Media Query opcional: se a tela do celular for muito pequena, os cards ficam em 1 coluna só */
+/* Media Query para Celulares (Garante que no celular fique em 1 coluna só) */
 @media (max-width: 600px) {
   .apps-grid {
     grid-template-columns: 1fr;
