@@ -63,7 +63,7 @@
   transform: translateY(-4px);
 }
 /* Card */
-.app-tictactoe {
+.app-jwotictactoe {
   background: var(--card-bg);
   border-radius: 18px;
   display: flex;
