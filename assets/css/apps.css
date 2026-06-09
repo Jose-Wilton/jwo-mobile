@@ -16,13 +16,11 @@
   opacity: 0.9;
 }
 
-/* Grid Modificado */
+/* Grid */
 .apps-grid {
   display: grid;
   gap: 1.5rem;
-  /* Define que haverá no máximo 2 colunas iguais */
   grid-template-columns: repeat(2, minmax(260px, 1fr)); 
-  /* Centraliza o grid na tela caso ela seja muito larga */
   max-width: 800px; 
   margin: 0 auto;
 }
