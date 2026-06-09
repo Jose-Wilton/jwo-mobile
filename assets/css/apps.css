@@ -163,3 +163,8 @@
   height: 18px;
   width: 18px;
 }
+@media (max-width: 600px) {
+  .apps-grid {
+    grid-template-columns: 1fr;
+  }
+}
