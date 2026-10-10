@@ -1,0 +1,131 @@
+
+
+/* Header Principal (Topo)*/
+.privacy-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.privacy-header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 0.8rem;
+}
+
+.privacy-header p {
+  color: var(--text-light);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+/* Card Principal*/
+.privacy-card {
+  background: var(--card-bg);
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 680px;
+  margin: 0 auto;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+/* Header do Card (Ícone + Nome) */
+.privacy-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.8rem;
+}
+
+.privacy-icon {
+  width: 80px;
+  border-radius: 12px;
+}
+
+.privacy-name {
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+/*Descrição*/
+.privacy-desc {
+  color: var(--text-dark);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.4;
+  margin: 1rem auto 0;
+  max-width: 560px;
+  text-align: left;
+}
+
+/* Seções da Política */
+.privacy-section {
+  margin-top: 1.4rem;
+}
+
+.privacy-section h2 {
+  color: var(--text-dark);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  margin-bottom: 0.4rem;
+}
+
+.privacy-section p {
+  color: var(--text-dark);
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+.privacy-section ul {
+  color: var(--text-dark);
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.4;
+  padding-left: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+/* Texto Final */
+.privacy-update {
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 2.2rem;
+  opacity: 0.4;
+  text-align: center;
+}
+/*Responsivo*/
+@media (max-width: 600px) {
+
+  .privacy-card {
+    padding: 1.6rem;
+  }
+
+  .privacy-icon {
+    height: 70px;
+    width: 70px;
+  }
+
+  .privacy-name {
+    font-size: 1.2rem;
+  }
+
+  .privacy-desc {
+    font-size: 0.9rem;
+  }
+
+  .privacy-section h2 {
+    font-size: 0.9rem;
+  }
+}
